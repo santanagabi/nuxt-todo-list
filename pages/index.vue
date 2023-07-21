@@ -15,6 +15,12 @@
 
     <div class="tasks">
       <!-- Component -->
+      <!-- {{ $store.state.tasks }} -->
+      <Task 
+        v-for="(task, i) in $store.state.tasks"
+        :key="i"
+        :task="task"
+      />
     </div>
   </main>
 </template>
@@ -32,7 +38,9 @@ export default {
   methods: {
     addTask() {
       if(this.newTask) { // It´s not empty
-
+        // mutation -> commit
+        this.$store.commit('ADD_TASK', this.newTask);
+        this.newTask = '';
       }
     }
   }

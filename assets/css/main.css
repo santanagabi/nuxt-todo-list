@@ -2,63 +2,60 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Fira sans', sans-serif;
-}
-
-body {
-	background-color: rgb(38, 35, 54);
-	color: #FFF;
-}
-
-main {
+	font-family: 'Fira Sans', sans-serif;
+  }
+  
+  body {
+	background-color: #5c487f;
+	color: #fff;
+  }
+  
+  main {
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 2rem;
-}
-
-main h1 {
+  }
+  
+  main h1 {
 	font-size: 2.5rem;
 	text-transform: capitalize;
 	margin-bottom: 0.5rem;
-}
-
-main h1 ~ p {
+  }
+  
+  main h1 ~ p {
 	margin-bottom: 2rem;
-}
-
-main .create-new {
+  }
+  
+  main .create-new {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	max-width: 480px;
-}
-
-main .create-new input {
-	appearance: none;
+  }
+  
+  main .create-new input {
 	border: none;
 	outline: none;
-	border-bottom: 1px solid #FFF;
+	border-bottom: 1px solid #42a598;
 	background-color: transparent;
-	color: #FFF;
+	color: #fff;
 	font-size: 1.5rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding: 0.5rem 0;
 	margin: 0;
 	transition: 0.4s;
-}
-
-main .create-new input:focus {
-	border-bottom-color: rgb(47, 214, 111);
-}
-
-main .create-new button {
-	appearance: none;
+  }
+  
+  main .create-new input:focus {
+	border-bottom-color: #2fd0d6;
+  }
+  
+  main .create-new button {
 	border: none;
 	outline: none;
-	background-color: rgb(47, 214, 111);
+	background-color: #4e90bd;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #000;
@@ -67,33 +64,32 @@ main .create-new button {
 	border-radius: 0.5rem;
 	margin-left: 0.5rem;
 	cursor: pointer;
-}
-
-main .tasks {
+  }
+  
+  main .tasks {
 	width: 100%;
 	max-width: 480px;
 	margin-top: 2rem;
-}
-
-main .tasks .task {
+  }
+  
+  main .tasks .task {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: rgb(52, 47, 78);
+	background-color: #6b589c;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	margin-bottom: 1rem;
-}
-
-main .tasks .task .buttons {
+  }
+  
+  main .tasks .task .buttons {
 	min-width: fit-content;
-}
-
-main .tasks .task button {
-	appearance: none;
+  }
+  
+  main .tasks .task button {
 	border: none;
 	outline: none;
-	background-color: rgb(47, 214, 111);
+	background-color: #4d64e6;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #000;
@@ -102,17 +98,18 @@ main .tasks .task button {
 	border-radius: 0.5rem;
 	margin-left: 0.5rem;
 	cursor: pointer;
-}
-
-main .tasks .task button.delete {
+  }
+  
+  main .tasks .task button.delete {
 	background-color: crimson;
-	color: #EEE;
-}
-
-.tasks .task.is-complete {
+	color: #fff;
+  }
+  
+  .tasks .task.is-complete {
 	opacity: 0.7;
-}
-
-.tasks .task.is-complete .content {
+  }
+  
+  .tasks .task.is-complete .content {
 	text-decoration: line-through;
-}
+  }
+  
